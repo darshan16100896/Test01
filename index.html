@@ -42,17 +42,89 @@
             </div>
         </div>
     </section>
-    <section class="digital-solution">
-        <div class="text">
-            <h2 class="second-h2">
-                Building Intutive Digital solutions for the Enterprise
+    <section class="digital-solution container flex align-center">
+        <div class="text flex-1">
+            <h2 class="head2 second-h2">
+                Building Intutive Digital solutions <br> for the Enterprise
             </h2>
-            <p class="second-p">
+            <p class="para2 second-p">
                 Aixtor is focused on building software solutions for enterprises with a goal to improve operational agility and customer experience. We believe in understanding the current business processes and empowering them with digital solutions to give effective and efficient output. 
             </p>
         </div>
-        <div class="sec2-img">
-
+        <div class="sec2-img flex-1">
+            <img src="./img/second.png" alt="">
         </div>
     </section>
+    <section class="what-we-do container">
+        <div class="text flex-1">
+            <h2 class="head2 second-h2">
+                What We Do
+            </h2>
+            <p class="para2 second-p">
+                Aixtor focus on providing enterprises with experience leadership and dedicated software <br> design and development team tailored to specific 
+            </p>
+        </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Services')" id="defaultopen">Services</button>
+            <button class="tablinks" onclick="openCity(event, 'Solutions')">Solutions</button>
+        </div>
+        <div id="services" class="tabcontainer">
+            <div class="card-wrapper">
+                <div class="service-icon">
+                    <img src="./img/company.png" alt="">
+                </div>
+                <div class="card-detail">
+                    <h2 class="second-h21">Enterprise <br>Content Management</h2>
+                    <p class="second-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, commodi dolorem. Distinctio quia dolores nam eius dicta, id, voluptatem fuga, aliquid et exercitationem reiciendis. Sint!</p>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="service-icon align-center">
+                    <img src="./img/Layer-26-copy-5.png" alt="">
+                </div>
+                <div class="card-detail">
+                    <h2 class="second-h21">Liferay Consulting</h2>
+                    <p class="second-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, commodi dolorem. Distinctio quia dolores nam eius dicta, id, voluptatem fuga, aliquid et exercitationem reiciendis. Sint!</p>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="service-icon align-center">
+                    <img src="./img/artificial-intelligence.png" alt="">
+                </div>
+                <div class="card-detail">
+                    <h2 class="second-h21">BI & Analyst</h2>
+                    <p class="second-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, commodi dolorem. Distinctio quia dolores nam eius dicta, id, voluptatem fuga, aliquid et exercitationem reiciendis. Sint!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-cross">
+    </div>
+    <section class="how-we-transformed">
+        <div class="container-text container">
+            <h2 class="second-h21">How we transformed <br>businesses Case Studies</h2>
+            <p class="second-p2">Showcasing how we empowered enterprises with <br> Intelligent Software Solutions.</p>
+        </div>
+    </section>
+
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
 </html>
